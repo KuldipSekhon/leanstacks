@@ -58,14 +58,19 @@ gulp.task 'css', ->
     .pipe(minifycss())
     .pipe(gulp.dest('dist/assets/app/css'))
 
-gulp.task 'default', ['clean'], ->
-  gulp.start 'lib', 'templates', 'scripts', 'html', 'css'
+gulp.task 'images', ->
+  gulp.src('src/main/app/img/**/*')
+    .pipe(gulp.dest('dist/assets/app/img'))
 
-gulp.task 'run', ['lib', 'templates', 'scripts', 'html', 'css'], ->
+gulp.task 'default', ['clean'], ->
+  gulp.start 'lib', 'templates', 'scripts', 'html', 'css', 'images'
+
+gulp.task 'run', ['lib', 'templates', 'scripts', 'html', 'css', 'images'], ->
   gulp.watch 'src/main/app/templates/**/*.html', ['templates']
   gulp.watch 'src/main/app/coffee/**/*.coffee', ['scripts']
   gulp.watch 'src/main/app/*.html', ['html']
   gulp.watch 'src/main/app/css/**/*.css', ['css']
+  gulp.watch 'src/main/app/img/**/*', ['images']
   gulp.watch 'lib/**', ['lib']
 
   gulp.src('dist')
