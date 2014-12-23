@@ -13,8 +13,8 @@ LeanStacksApp.module 'Header', (Header, LeanStacksApp, Backbone, Marionette, $, 
       'click @ui.navigation': 'onNavigationClicked'
 
     onNavigationClicked: (e) ->
-      #e.preventDefault()
-      #e.stopPropagation()
+      e.preventDefault()
+      e.stopPropagation()
       @$el.find('li.active').each ->
         $(@).removeClass 'active'
       $(e.target).parent().addClass 'active'

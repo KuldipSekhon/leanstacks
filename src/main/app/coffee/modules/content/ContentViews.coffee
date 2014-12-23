@@ -19,3 +19,9 @@ LeanStacksApp.module 'Content', (Content, LeanStacksApp, Backbone, Marionette, $
     template: 'books'
 
     className: 'container'
+
+    events:
+      'click .js-leanpub': 'onClickLeanPub'
+
+    onClickLeanPub: ->
+      location.assign "https://leanpub.com/leanstacks-marionette-spring"
