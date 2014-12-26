@@ -22,3 +22,13 @@ footer div.row:first-child {
   padding-top: 20px;
   border-top: 1px solid #bbbbbb;
 }
+
+.thumbnail {
+  width: 25%;
+  height: 25%;
+  margin: 5px 10px 10px 5px;
+}
+
+.thumbnail-left {
+  float: left;
+}
