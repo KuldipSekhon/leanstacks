@@ -14,9 +14,7 @@ LeanStacksApp.module 'Header', (Header, LeanStacksApp, Backbone, Marionette, $, 
 
     onNavigationClicked: (e) ->
       e.preventDefault()
-      e.stopPropagation()
-      @$el.find('li.active').each ->
-        $(@).removeClass 'active'
-      $(e.target).parent().addClass 'active'
+      @ui.navigation.removeClass 'active'
+      $(e.target).addClass('active').blur()
       commandName = $(e.target).attr 'data-nav-target'
       LeanStacksApp.execute commandName
