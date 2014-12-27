@@ -22,6 +22,10 @@ LeanStacksApp.module 'Content', (Content, LeanStacksApp, Backbone, Marionette, $
 
     events:
       'click .js-leanpub': 'onClickLeanPub'
+      'click .js-tab': 'onClickTab'
 
     onClickLeanPub: ->
       location.assign "https://leanpub.com/leanstacks-marionette-spring"
+
+    onClickTab: (e) ->
+      $(e.target).addClass('active').blur()
