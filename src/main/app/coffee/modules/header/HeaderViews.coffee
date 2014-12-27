@@ -18,3 +18,8 @@ LeanStacksApp.module 'Header', (Header, LeanStacksApp, Backbone, Marionette, $, 
       $(e.target).addClass('active').blur()
       commandName = $(e.target).attr 'data-nav-target'
       LeanStacksApp.execute commandName
+
+    onNavigation: (route) ->
+      logger.debug "HeaderView.onNavigation route:#{ route }"
+      @ui.navigation.removeClass 'active'
+      $("[data-nav-route='#{ route }']").addClass 'active'

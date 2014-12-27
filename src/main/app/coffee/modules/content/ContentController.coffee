@@ -13,16 +13,19 @@ LeanStacksApp.module 'Content', (Content, LeanStacksApp, Backbone, Marionette, $
 
     showHome: ->
       logger.debug "ContentController.showHome"
+      LeanStacksApp.navigate 'home'
       homeView = new Content.HomeView
       LeanStacksApp.contentRegion.show homeView
 
     showAbout: ->
       logger.debug "ContentController.showAbout"
+      LeanStacksApp.navigate 'about'
       aboutView = new Content.AboutView
       LeanStacksApp.contentRegion.show aboutView
 
     showBooks: ->
       logger.debug "ContentController.showBooks"
+      LeanStacksApp.navigate 'books'
       booksView = new Content.BooksView
       LeanStacksApp.contentRegion.show booksView
 
@@ -41,13 +44,10 @@ LeanStacksApp.module 'Content', (Content, LeanStacksApp, Backbone, Marionette, $
 
   # Handle Application Messaging
   LeanStacksApp.commands.setHandler 'content:home', ->
-    LeanStacksApp.navigate 'home'
     controller.showHome()
 
   LeanStacksApp.commands.setHandler 'content:about', ->
-    LeanStacksApp.navigate 'about'
     controller.showAbout()
 
   LeanStacksApp.commands.setHandler 'content:books', ->
-    LeanStacksApp.navigate 'books'
     controller.showBooks()

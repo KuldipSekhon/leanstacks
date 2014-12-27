@@ -12,6 +12,7 @@ LeanStacksApp.navigate = (route, options) ->
   logger.debug "LeanStacksApp.navigate route: #{ route }"
   options || ( options = {} )
   Backbone.history.navigate route, options
+  LeanStacksApp.vent.trigger 'navigate', route
 
 
 # Retrieve the current route

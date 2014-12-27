@@ -8,6 +8,9 @@ LeanStacksApp.module 'Header', (Header, LeanStacksApp, Backbone, Marionette, $, 
       headerView = new Header.HeaderView()
       LeanStacksApp.headerRegion.show headerView
 
+      LeanStacksApp.vent.on 'navigate', (route) ->
+        headerView.triggerMethod 'navigation', route
+
 
   # Create an instance
   controller = new HeaderController()
