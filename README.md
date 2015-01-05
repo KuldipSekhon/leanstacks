@@ -1,3 +1,3 @@
-# LeanStacks.org
+# LeanStacks.com
 
-The [leanstacks](http://www.leanstacks.org) site.
+The [LEAN**STACKS**](http://www.leanstacks.com/) site.
