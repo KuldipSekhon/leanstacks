@@ -20,6 +20,12 @@ LeanStacksApp.getCurrentRoute = () ->
   Backbone.history.fragment
 
 
+# Track user naviagtion
+LeanStacksApp.vent.on 'navigate', (route) ->
+  if ga?
+    ga 'send', 'pageview', "/#{ route }"
+
+
 # Create the top-level Regions
 LeanStacksApp.addRegions
   headerRegion  : '#header-region'

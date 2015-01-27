@@ -7,6 +7,7 @@ LeanStacksApp.module 'Content', (Content, LeanStacksApp, Backbone, Marionette, $
       'home': 'showHome'
       'about': 'showAbout'
       'books': 'showBooks'
+      'media': 'showMedia'
 
   # Define the Controller for the Content module
   class ContentController extends Marionette.Controller
@@ -28,6 +29,12 @@ LeanStacksApp.module 'Content', (Content, LeanStacksApp, Backbone, Marionette, $
       LeanStacksApp.navigate 'books'
       booksView = new Content.BooksView
       LeanStacksApp.contentRegion.show booksView
+
+    showMedia: ->
+      logger.debug "ContentController.showMedia"
+      LeanStacksApp.navigate 'media'
+      mediaView = new Content.MediaView
+      LeanStacksApp.contentRegion.show mediaView
 
 
   # Create an instance
@@ -51,3 +58,6 @@ LeanStacksApp.module 'Content', (Content, LeanStacksApp, Backbone, Marionette, $
 
   LeanStacksApp.commands.setHandler 'content:books', ->
     controller.showBooks()
+
+  LeanStacksApp.commands.setHandler 'content:media', ->
+    controller.showMedia()
