@@ -29,3 +29,9 @@ LeanStacksApp.module 'Content', (Content, LeanStacksApp, Backbone, Marionette, $
 
     onClickTab: (e) ->
       $(e.target).addClass('active').blur()
+
+  class Content.MediaView extends Backbone.Marionette.ItemView
+
+    template: 'media'
+
+    className: 'container'
