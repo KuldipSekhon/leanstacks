@@ -48,7 +48,7 @@ gulp.task 'templates', ->
      .pipe(gulp.dest('dist/assets/app/js'))
 
 gulp.task 'html', ->
-  gulp.src('src/main/app/*.html')
+  gulp.src(['src/main/app/*.html','src/main/app/favicon.ico'])
     .pipe(gulp.dest('dist'))
 
 gulp.task 'css', ->

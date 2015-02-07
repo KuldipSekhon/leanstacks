@@ -35,6 +35,25 @@ footer div.row:first-child {
   border-top: 1px solid #bbbbbb;
 }
 
+.link-danger:link,.link-danger:visited {
+  color: #bbbbbb;
+}
+.link-danger:hover {
+  color: #e52c23;
+}
+.link-danger:active {
+  color: #e52c23;
+}
+.link-black:link,.link-black:visited {
+  color: #bbbbbb;
+}
+.link-black:hover {
+  color: #000000;
+}
+.link-danger:active {
+  color: #000000;
+}
+
 .thumbnail {
   width: 25%;
   height: 25%;
