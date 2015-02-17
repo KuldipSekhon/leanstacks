@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Learn lean application engineering techniques with hands-on experience using Backbone.Marionette.js and the Spring Framework.">
+    <title>LeanStacks | Lean Technology Tools and Instruction</title>
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link href="assets/lib/bootstrap-3.3.1/css/bootstrap-paper.min.css" rel="stylesheet">
+    <link href="assets/lib/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/app/css/app.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/lib/html5shiv.min.js"></script>
+      <script src="assets/lib/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <a id="top"></a>
+
+    <header id="header-region">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="/index.html"><span class="text-primary">LEAN</span><strong>STACKS</strong></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="/index.html"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                    <li><a href="/media.html"><i class="fa fa-fw fa-video-camera"></i> Media</a></li>
+                    <li><a href="/books.html"><i class="fa fa-fw fa-book"></i> Books</a></li>
+                    <li class="active"><a href="/stacks.html"><i class="fa fa-fw fa-cubes text-primary"></i> Stacks</a></li>
+                    <li><a href="/about.html"><i class="fa fa-fw fa-info-circle"></i> About</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="content-region">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-3 hidden-sm hidden-xs"> <!-- Begin Sidebar -->
+            <nav class="affix">
+              <h5><i class="fa fa-rocket text-warning"></i> Jump To</h5>
+              <ul class="nav nav-sidebar">
+                <li><a href="#skeleton-marionette">Marionette.js Starter</a></li>
+                <li><a href="#skeleton-boot-ws">Spring Boot WS Starter</a></li>
+                <li><a href="#top" class="text-muted">Back to Top</a></li>
+              </ul>
+            </nav>
+          </div> <!-- End Sidebar -->
+
+          <div class="col-md-9"> <!-- Begin Main Content -->
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="page-header">
+                  <h1>
+                    Lean Tech Stacks and Tools
+                  </h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <a id="skeleton-marionette"></a>
+                <h3>Marionette.js Starter Project <span class="label label-warning">NEW</span></h3>
+                <p class="lead">
+                  The Marionette.js skeleton project provides a pre-constructed
+                  starter project structure for Backbone.Marionette.js Single
+                  Page Application (SPA) projects.
+                </p>
+                <p>
+                  <h5>Features</h5>
+                  <p>
+                    <h6>Modules</h6>
+                    The project demonstrates how to design Marionette.js applications with
+                    high cohesion through the use of modules.
+                  </p>
+                  <p>
+                    <h6>Messaging</h6>
+                    The project illustrates the use of the three messaging mechanisms made available
+                    by the included backbone.wreqr library.
+                  </p>
+                  <p>
+                    <h6>Standard Page Structure</h6>
+                    The project's single HTML page, index.html, is organized into header,
+                    footer, and main content sections.  A fourth section contains
+                    modal dialog markup.  Each page section is mapped to a top-level Marionette
+                    application region upon startup.
+                  </p>
+                  <p>
+                    <h6>Externalized Underscore Templates</h6>
+                    The project depicts how to externalize Underscore HTML templates into individual
+                    source files rather than embedding them in the index.html page.
+                  </p>
+                  <p>
+                    <h6>Google Analytics Ingetration</h6>
+                    The project integrates Marionette application routing with Google Analytics to
+                    capture pageview event statistics from <code>route</code> events.
+                  </p>
+                  <p>
+                    <h6>Reusable Modal Dialog</h6>
+                    The project contains a reusable modal dialog Marionette View class and HTML
+                    template.  The modal content and behavior is driven by JSON and, thus, may be reused
+                    throughout the application without requiring code for each modal.
+                  </p>
+                  <p>
+                    <h6>Unit Testing with Karma and Jasmine</h6>
+                    The project is pre-configured to use Karma and Jasmine for unit testing.  Several
+                    examples of unit tests are included.
+                  </p>
+                </p>
+                <p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h5>Technology Stack</h5>
+                      <ul>
+                        <li>Backbone.Marionette.js</li>
+                        <li>Backbone.js</li>
+                        <li>Underscore.js</li>
+                        <li>jQuery</li>
+                        <li>BootStrap</li>
+                        <li>Font Awesome</li>
+                        <li>Karma</li>
+                        <li>Jasmine</li>
+                        <li>Jasmine jQuery</li>
+                        <li>Gulp</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <h5>Languages</h5>
+                      <ul>
+                        <li>CoffeeScript</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                      </ul>
+                    </div>
+                  </div>
+                </p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4>Read about it on
+                      <i class="fa fa-fw fa-leanpub"></i>
+                      <a href="https://leanpub.com/leanstacks-marionette-spring" target="_blank" title="Read on LeanPub">LeanPub</a>.
+                    </h4>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="pull-right">View it on
+                      <i class="fa fa-fw fa-github"></i>
+                      <a href="https://github.com/mwarman/skeleton-ui-marionette-coffee" target="_blank" title="GitHub Repository">GitHub</a>.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <hr class="separator"/>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <a id="skeleton-boot-ws"></a>
+                <h3>Spring Boot Web Service Starter Project <span class="label label-warning">NEW</span></h3>
+                <p class="lead">
+                  The Spring Boot web services starter project provides a foundation
+                  to rapidly construct a RESTful web services application.
+                </p>
+                <p>
+                  <h5>Features</h5>
+                  <p>
+                    <h6>RESTful Web Service Family</h6>
+                    The project contains examples of <strong>C</strong>reate, <strong>R</strong>ead,
+                    <strong>U</strong>pdate, and <strong>D</strong>elete web services.
+                    The project illustrates the use of <code>@ExceptionHandler</code> annotated methods
+                    to manage web service responses when common exceptional conditions arise.
+                  </p>
+                  <p>
+                    <h6>Business Services</h6>
+                    The project demonstrates the encapsulation of business behaviors into domain-specific,
+                    Spring-managed components annotated with <code>@Service</code>.
+                  </p>
+                  <p>
+                    <h6>Spring Data JPA</h6>
+                    The project shows the use of Spring Data JPA repositories, <code>@Repository</code>, for data
+                    access and management. Illustrates the <code>@Entity</code> annotation and other JPA entity model
+                    annotations for attribute and relationship mapping.
+                  </p>
+                  <p>
+                    <h6>HSQLDB In-Memory Database</h6>
+                    The project illustrates how to use the HSQLDB in-memory database which is useful
+                    for rapid prototyping or unit test execution in a continuous integration environment.
+                    The project contains schema and data SQL scripts to build and destroy the database
+                    dynamically as the application is started and stopped.
+                  </p>
+                  <p>
+                    <h6>MySQL Database</h6>
+                    In addition to HSQLDB support, the project also supports integration with MySQL.
+                    The project contains MySQL schema and data scripts.
+                  </p>
+                  <p>
+                    <h6>Transaction Management</h6>
+                    The project contains examples of the <code>@Transactional</code> annotation on
+                    business service methods.
+                  </p>
+                  <p>
+                    <h6>Cache Management</h6>
+                    The project contains examples of the <code>@Cacheable</code>, <code>@CachePut</code>,
+                    and <code>@CacheEvict</code> annotations on business service methods.
+                  </p>
+                  <p>
+                    <h6>Scheduled (Batch) Processes</h6>
+                    The project illustrates the use of the <code>@Scheduled</code> annotation and
+                    provides examples of cron, fixed rate, and fixed delay schedules.
+                  </p>
+                  <p>
+                    <h6>Spring Security</h6>
+                    The project provides examples of Spring Security integration. The web service endpoints
+                    are secured using Basic Auth, backed by database authentication and authorization. The
+                    project illustrates declarative authorization for resources by role.
+                  </p>
+                  <p>
+                    <h6>Spring Profiles</h6>
+                    The project demonstrates how to use Spring Profiles to activate (or deactivate) application
+                    components and configuration. The profiles illustrated are: batch, hsqldb, and mysql.
+                  </p>
+                  <p>
+                    <h6>Unit Tests</h6>
+                    The project contains unit test examples for standard components such as business services
+                    or batch beans and examples for the web service endpoints using Mock objects.
+                  </p>
+                  <p>
+                    <h6>Actuator Monitoring and Management</h6>
+                    The project illustrates the use of Spring Boot Actuator for application monitoring and
+                    management. The application demonstrates the recording of custom metrics. Also, custom
+                    Maven project attributes are incorporated into the Actuator info endpoint.
+                  </p>
+                </p>
+                <p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h5>Technology Stack</h5>
+                      <ul>
+                        <li>Spring Boot</li>
+                        <li>Spring Framework</li>
+                        <li>Spring Data JPA</li>
+                        <li>Spring Security</li>
+                        <li>JUnit</li>
+                        <li>Maven</li>
+                        <li>HSQLDB</li>
+                        <li>MySQL</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <h5>Languages</h5>
+                      <ul>
+                        <li>Java</li>
+                      </ul>
+                    </div>
+                  </div>
+                </p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h4>Read about it on
+                      <i class="fa fa-fw fa-leanpub"></i>
+                      <a href="https://leanpub.com/leanstacks-marionette-spring" target="_blank" title="Read on LeanPub">LeanPub</a>.
+                    </h4>
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="pull-right">View it on
+                      <i class="fa fa-fw fa-github"></i>
+                      <a href="https://github.com/mwarman/skeleton-ws-spring-boot" target="_blank" title="GitHub Repository">GitHub</a>.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div> <!-- End Main Content -->
+
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer-region">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center text-muted">
+              A LEAN<strong>STACKS</strong> Solution
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center text-muted">
+              <a href="https://www.youtube.com/channel/UChCCDds_KM-w02yVn7cQI_Q"
+                 title="Watch LeanStacks Instructional Videos on YouTube"
+                 target="_blank"
+                 class="text-muted h3 link-danger"><i class="fa fa-fw fa-youtube-play"></i></a>
+
+              <a href="https://leanpub.com/leanstacks-marionette-spring"
+                 title="LeanStacks Instructional Publications on LeanPub"
+                 target="_blank"
+                 class="text-muted h3 link-black"><i class="fa fa-fw fa-leanpub"></i></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/lib/log4javascript-1.4.10.js"></script>
+    <script src="assets/lib/jquery-1.11.1.min.js"></script>
+    <script src="assets/lib/json2.js"></script>
+    <script src="assets/lib/underscore-1.7.0.min.js"></script>
+    <script src="assets/lib/backbone-1.1.2.min.js"></script>
+    <script src="assets/lib/backbone.marionette-2.2.1.min.js"></script>
+    <script src="assets/lib/bootstrap-3.3.1/js/bootstrap.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-58451914-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
