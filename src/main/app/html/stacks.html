@@ -66,6 +66,7 @@
             <nav class="affix">
               <h5><i class="fa fa-rocket text-warning"></i> Jump To</h5>
               <ul class="nav nav-sidebar">
+                <li><a href="#skeleton-angular">Angular.js Starter</a></li>
                 <li><a href="#skeleton-marionette">Marionette.js Starter</a></li>
                 <li><a href="#skeleton-boot-ws">Spring Boot WS Starter</a></li>
                 <li><a href="#top" class="text-muted">Back to Top</a></li>
@@ -87,8 +88,117 @@
 
             <div class="row">
               <div class="col-md-12">
+                <a id="skeleton-angular"></a>
+                <h3>Angular.js Starter Project <span class="label label-warning">NEW</span></h3>
+                <p class="lead">
+                  The Angular.js skeleton project provides a pre-constructed
+                  starter project structure for Angular.js Single
+                  Page Application (SPA) projects.
+                </p>
+                <p>
+                  <h5>Features</h5>
+                  <p>
+                    <h6>Standard Project Structure</h6>
+                    The project is organized into a directory structure that facilitates clean
+                    separation of custom source code from third party libraries and unit tests.
+                  </p>
+                  <p>
+                    <h6>DevOps Automation</h6>
+                    <a href="http://gulpjs.com/" target="_blank">Gulp</a> and the Node Package
+                    Manager (or NPM) provide local application development tools and server
+                    environment development operations workflow automation.  The Gulp configuration
+                    file contains tasks that clean, assemble, lint, unit test, and run a local
+                    development web server.
+                  </p>
+                  <p>
+                    <h6>Standard Page Structure</h6>
+                    The project's single HTML page, index.html, is organized into header,
+                    footer, and main content sections. The header and footer are each mapped to a distinct
+                    HTML partial and Angular controller.  The main content section is driven by
+                    the Angular router.
+                  </p>
+                  <p>
+                    <h6>Externalized HTML Partials</h6>
+                    The project depicts how to externalize HTML partials into individual
+                    source files rather than embedding them in the index.html page.
+                  </p>
+                  <p>
+                    <h6>Routing</h6>
+                    The Angular <code>ngRoute</code> module is included and an example configuration
+                    is employed to map content to the main page section.
+                  </p>
+                  <p>
+                    <h6>Services</h6>
+                    The project includes examples of custom service modules that utilize the Angular
+                    <code>ngResource</code> module to make AJAX requests to RESTful web services.
+                  </p>
+                  <p>
+                    <h6>Controllers</h6>
+                    The project illustrates the modularization of controllers and nesting of scopes.
+                    Learn to use nested scopes to effectively minimize redundant logic.
+                  </p>
+                  <p>
+                    <h6>AngularStrap Integration</h6>
+                    The project integrates with the
+                    <a href="http://mgcrea.github.io/angular-strap/" target="_blank">AngularStrap</a>
+                    library to maximize the integration potential between Angular and Bootstrap.
+                  </p>
+                  <p>
+                    <h6>Unit Testing with Karma and Jasmine</h6>
+                    The project is pre-configured to use Karma and Jasmine for unit testing.  Several
+                    examples of unit tests are included.
+                  </p>
+                </p>
+                <p>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h5>Technology Stack</h5>
+                      <ul>
+                        <li>Angular.js</li>
+                        <li>jQuery</li>
+                        <li>AngularStrap</li>
+                        <li>BootStrap</li>
+                        <li>Font Awesome</li>
+                        <li>Karma</li>
+                        <li>Jasmine</li>
+                        <li>Jasmine jQuery</li>
+                        <li>Gulp</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <h5>Languages</h5>
+                      <ul>
+                        <li>CoffeeScript</li>
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                      </ul>
+                    </div>
+                  </div>
+                </p>
+                <div class="row">
+                  <div class="col-md-6">
+                  </div>
+                  <div class="col-md-6">
+                    <h4 class="pull-right">View it on
+                      <i class="fa fa-fw fa-github"></i>
+                      <a href="https://github.com/mwarman/skeleton-ui-ng-coffee" target="_blank" title="GitHub Repository">GitHub</a>.
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <hr class="separator"/>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
                 <a id="skeleton-marionette"></a>
-                <h3>Marionette.js Starter Project <span class="label label-warning">NEW</span></h3>
+                <h3>Marionette.js Starter Project</h3>
                 <p class="lead">
                   The Marionette.js skeleton project provides a pre-constructed
                   starter project structure for Backbone.Marionette.js Single
@@ -189,7 +299,7 @@
             <div class="row">
               <div class="col-md-12">
                 <a id="skeleton-boot-ws"></a>
-                <h3>Spring Boot Web Service Starter Project <span class="label label-warning">NEW</span></h3>
+                <h3>Spring Boot Web Service Starter Project <span class="label label-danger">HOT</span></h3>
                 <p class="lead">
                   The Spring Boot web services starter project provides a foundation
                   to rapidly construct a RESTful web services application.
@@ -240,6 +350,11 @@
                     <h6>Scheduled (Batch) Processes</h6>
                     The project illustrates the use of the <code>@Scheduled</code> annotation and
                     provides examples of cron, fixed rate, and fixed delay schedules.
+                  </p>
+                  <p>
+                    <h6>Asynchronous Processes</h6>
+                    The project illustrates the use of the <code>@Async</code> annotation and provides
+                    examples of asynchronous methods with and without return values.
                   </p>
                   <p>
                     <h6>Spring Security</h6>
@@ -345,7 +460,7 @@
     <script src="assets/lib/backbone-1.1.2.min.js"></script>
     <script src="assets/lib/backbone.marionette-2.2.1.min.js"></script>
     <script src="assets/lib/bootstrap-3.3.1/js/bootstrap.min.js"></script>
-    <script>
+    <!--script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -353,6 +468,6 @@
 
       ga('create', 'UA-58451914-1', 'auto');
       ga('send', 'pageview');
-    </script>
+    </script-->
   </body>
 </html>
